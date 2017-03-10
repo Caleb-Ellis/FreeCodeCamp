@@ -1,0 +1,39 @@
+.text {
+  font-family: Bookman Old Style;
+}
+
+.title {
+  font-size: 300%;
+  font-family: Bookman Old Style;
+  font-style: bold;
+}
+
+.subtitle {
+  font-size: 150%;
+  font-family: Bookman Old Style;
+  font-style: italic;
+}
+
+.border-thin {
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  border-radius: 5px;
+}
+
+.light-blue {
+  background-color: #cbe5f8;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}

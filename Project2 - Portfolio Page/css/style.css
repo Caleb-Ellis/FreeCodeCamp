@@ -1,0 +1,84 @@
+.block {
+  background-color:black;
+  opacity:0.7;
+  padding:10px;
+  display:block;
+}
+
+.btn-default {
+  background-color:black !important;
+  width: 100px !important;
+  color:#CCCCFF !important;
+}
+
+.toprow {
+  background-color:black;
+  opacity:0.7;
+  padding:10px;
+  display:row;
+}
+
+.aboutMe {
+  background-color:#120533;
+  opacity:1;
+  padding:10px;
+  display:row;
+}
+
+.body {
+  background-color:white;
+  font-family:Helvetica;
+  color:white;
+}
+
+.pageOne {
+  background:url("https://github.com/Caleb-Ellis/FreeCodeCamp/blob/master/Project2%20-%20Portfolio%20Page/img/jesse-collins-92501.jpg?raw=true");
+  background-size: cover;
+  height: 600px;
+  max-height: 600px;
+}
+
+.pageTwo {
+  background:url(#);
+  background-size: cover;
+  height: 320px;
+}
+
+.pageThree {
+  background:url("https://github.com/Caleb-Ellis/FreeCodeCamp/blob/master/Project2%20-%20Portfolio%20Page/img/hannu-pekka-peuranen-1301.jpg?raw=true");
+  background-size: cover;
+  height: 800px;
+  margin-top:30px;
+}
+
+.pageFour {
+  background:url("https://github.com/Caleb-Ellis/FreeCodeCamp/blob/master/Project2%20-%20Portfolio%20Page/img/paper_texture248.jpg?raw=true");
+  color:grey;
+  background-size: cover;
+  margin:-20px;
+}
+
+h1 {
+  padding:0;
+  margin-top:0px;
+}
+
+.profile {
+  max-height: 276px;
+  margin: 20px 0px 20px 0px;
+}
+
+.portfolio {
+  max-height: 400px;
+  max-width: 500px;
+  padding: 20px;
+  align: center;
+}
+
+img {
+  border-radius: 10px
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
