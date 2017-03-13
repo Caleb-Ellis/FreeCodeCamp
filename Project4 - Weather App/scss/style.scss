@@ -1,0 +1,110 @@
+.screen {
+  display: flex;
+  flex-direction: column;
+  border-radius:10px;
+  border-color: #999999;
+  border-style: inset;
+  width:375px;
+  height:667px;
+  margin:auto;
+  color:white;
+}
+
+.clear {
+  background: linear-gradient(#3299FF, #66DDFF);
+}
+
+.cloudy {
+  background: linear-gradient(#77AACC, #5588BB);
+}
+
+.rainy {
+  background: linear-gradient(#336699, #003399);
+}
+
+.lightning {
+  background: linear-gradient(#001133, #000011);
+}
+
+.snowy {
+  background: linear-gradient(#99EEFF, #66BBFF);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255,255,255,0.3);
+  height: 100px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-bar {
+  margin-top: 40px;
+  height: 300px;
+  width: 100%;
+  text-align: center;
+}
+
+.sun {
+  animation: fa-spin 10s infinite linear;
+}
+
+.info-bar {
+  display: flex;
+  background: rgba(255,255,255,0.3);
+  flex-direction:row;
+  margin-top:76px;
+  height: 102px;
+  width: 100%;
+  .week {
+    width:20%;
+    padding:5px 5px 0px 5px;
+    margin:1px;
+    height:100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+.week-icon {
+  font-size: 36px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  margin-top:auto;
+  padding: 15px 15px 15px 20px;
+  height: 60px;
+  width: 100%;
+}
+
+#degrees {
+  cursor:pointer;
+  font-size: 20px;
+  margin-right: auto;
+  &:hover {
+    opacity:0.5;
+  }
+}
+
+#me {
+  cursor:pointer;
+  margin-top: 8px;
+  font-size: 12px;
+  margin-left: 100px;
+  &:hover {
+    opacity:0.5;
+  }
+}
+
+body {
+  display: flex;
+  background-color:black;
+  font-family: 'Raleway', sans-serif;
+}
