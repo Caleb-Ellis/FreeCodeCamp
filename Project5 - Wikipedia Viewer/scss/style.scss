@@ -1,0 +1,142 @@
+body {
+  background: rgba(25, 154, 143, 1);
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+input[type=search] {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 5px 20px 5px 10px;
+  color: white;
+  border-color: rgba(15, 104, 103, 1);
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 3px;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #666;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #666;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #666;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #666;
+}
+
+.mainBar {
+  background: rgba(35, 174, 163, 1);
+  border-style: solid;
+  border-color: white;
+  border-radius: 100px;
+  text-align: center;
+  padding: 10px 30px 10px 30px;
+  width: 400px;
+  box-shadow: 10px 10px 10px rgb(15, 104, 103);
+}
+
+.tightBar {
+  border-style: solid;
+  border-color: white;
+  border-radius: 100px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 340px;
+}
+
+.center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.top {
+  position: fixed;
+  margin-top: -5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button {
+  background: rgba(35, 124, 123, 1);
+  padding: 0px 10px 0px 10px;
+  margin: 10px 5px 0 5px;
+  width: 100px;
+  border-radius: 20px;
+  border-color: white;
+  border-style: solid;
+  box-shadow: 2px 2px 2px rgb(5, 84, 83);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.results {
+  visibility: hidden;
+  margin-top: 12%;
+  color: grey;
+  background: white;
+  border-style: solid;
+  border-color: black;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#articles {
+  display: block;
+}
+
+#textSearch {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.embedSubmitField {
+  position: relative;
+  input {
+    width: 100%;
+  }
+  button {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    border: none;
+    background: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+textarea:focus,
+input:focus,
+button:focus {
+  outline: 0;
+}
+
+*:focus {
+  outline: 0;
+}
