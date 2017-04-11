@@ -1,0 +1,96 @@
+@font-face {
+  font-family: Dimitri;
+  src: url("https://raw.githubusercontent.com/Caleb-Ellis/FreeCodeCamp/master/Extras/DIMIS___.TTF");
+}
+a {
+  color: inherit;
+}
+
+body {
+  background: #6441a5;
+  color: #6441a5;
+  font-family: 'Helvetica';
+}
+
+.container-fluid {
+  background: white;
+  max-width: 700px;
+  min-width: 416px;
+  border: 3px solid #6441a5;
+  margin: 20px auto 0 auto;
+  padding: 0;
+}
+
+.footer {
+  font-size: 0.6em;
+  color: #6441a5;
+  text-align: center;
+  vertical-align: center;
+  margin: 3px;
+}
+
+.header {
+  font-family: Dimitri;
+  padding: 15px 30px 5px 30px;
+  border-bottom: 3px solid #6441a5;
+  background: #6441a5;
+  color: white;
+}
+
+.rows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  vertical-align: center;
+  height: 60px;
+  border-bottom: 3px solid #6441a5;
+}
+.rows .logoColumn {
+  width: 15%;
+  margin: auto;
+}
+.rows .logoColumn .logo {
+  max-height: 50px;
+  border-radius: 50%;
+  border: 3px solid #6441a5;
+}
+.rows .logoColumn .logo:hover {
+  opacity: 0.7;
+}
+.rows .name {
+  width: 35%;
+  margin: auto;
+  text-align: left;
+}
+.rows .status {
+  width: 50%;
+  margin: auto;
+  overflow: hidden;
+  max-height: 50px;
+  max-width: 350px;
+  padding-right: 10px;
+}
+
+.offline {
+  color: inherit;
+}
+
+.online {
+  background: #b8cca6;
+  color: white;
+}
+.online a, .online a:focus, .online a:hover, .online a:visited {
+  color: inherit;
+}
+
+.hidden {
+  display: none;
+}
+
+#me {
+  cursor: pointer;
+}
+#me:hover {
+  opacity: 0.7;
+}

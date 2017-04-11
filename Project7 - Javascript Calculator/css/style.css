@@ -1,0 +1,92 @@
+body {
+  background: #abc;
+}
+
+.button-area {
+  font-size: 1em;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  margin: 40px 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.button-area .btn {
+  transition: 0s;
+  padding: 5px;
+  width: 40px;
+  height: 30px;
+  margin: 4px;
+  background: #999;
+  box-shadow: 0 5px 0 #777;
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+  flex-grow: 1;
+  text-align: center;
+}
+.button-area .btn#btn0, .button-area .btn#btnEquals {
+  width: 88px;
+}
+.button-area .btn:hover {
+  cursor: pointer;
+}
+.button-area .btn:active {
+  transform: translate(0px, 3px);
+  box-shadow: 0 2px 0 #777;
+}
+
+.calc {
+  background: #DDD;
+  height: 400px;
+  width: 300px;
+  margin: 100px auto;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 0 8px 0 black, 0 20px 20px grey;
+}
+
+.solar {
+  background: #2b1f15;
+  border-radius: 5px;
+  height: 40px;
+  width: 180px;
+  margin: 15px 0 0 25px;
+}
+
+.screen {
+  background: #637469;
+  border-radius: 5px;
+  height: 70px;
+  width: 240px;
+  margin: 5px auto 0 auto;
+  box-shadow: 0 -5px 0 #334439;
+}
+
+.text {
+  font-size: 1em;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+.log {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  float: right;
+  margin: 4px 10px;
+}
+
+.history {
+  clear: both;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  float: right;
+  margin: -12px 12px 0 0;
+}
+
+#title {
+  margin: 5px auto 0 25px;
+}

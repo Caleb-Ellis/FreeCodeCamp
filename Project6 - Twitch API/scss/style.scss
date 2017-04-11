@@ -1,0 +1,99 @@
+// import custom font for header
+@font-face { font-family: Dimitri; src: url('https://raw.githubusercontent.com/Caleb-Ellis/FreeCodeCamp/master/Extras/DIMIS___.TTF'); }
+
+// set custom colors and border
+$twitchPurple: #6441a5;
+$onlineGreen: #b8cca6;
+$border: 3px solid $twitchPurple;
+
+a {
+  color: inherit;
+}
+
+body {
+  background: $twitchPurple;
+  color: $twitchPurple;
+  font-family: 'Helvetica';
+}
+
+.container-fluid {
+  background: white;
+  max-width: 700px;
+  min-width: 416px;
+  border: $border;
+  margin: 20px auto 0 auto;
+  padding: 0;
+}
+
+.footer {
+  font-size: 0.6em;
+  color: $twitchPurple;
+  text-align: center;
+  vertical-align: center;
+  margin: 3px;
+}
+
+.header {
+  font-family: Dimitri;
+  padding: 15px 30px 5px 30px;
+  border-bottom: $border;
+  background: $twitchPurple;
+  color: white;
+}
+
+.rows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  vertical-align: center;
+  height: 60px;
+  border-bottom: $border;
+  .logoColumn {
+    width: 15%;
+    margin: auto;
+    .logo {
+      max-height: 50px;
+      border-radius: 50%;
+      border: $border;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+  .name {
+    width: 35%;
+    margin: auto;
+    text-align: left;
+  }
+  .status {
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+    max-height: 50px;
+    max-width: 350px;
+    padding-right: 10px;
+  }
+}
+
+.offline {
+  color: inherit;
+}
+.online {
+  background: $onlineGreen;
+  color: white;
+  a, a:focus, a:hover, a:visited {
+    color: inherit;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+#me {
+  cursor:pointer;
+  &:hover {
+    opacity:0.7;
+  }
+}
