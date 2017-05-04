@@ -1,0 +1,79 @@
+body {
+  background: #7099FF;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+h3 {
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+}
+
+button {
+  font-weight: bold;
+  text-align: center;
+  border: solid black 2px;
+  padding: 7px 14px;
+  color: #fff;
+  font-size: 1em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  background: #89b;
+  margin: 10px;
+}
+button:hover {
+  cursor: pointer;
+  background: #78a;
+}
+
+.box {
+  text-align: center;
+  display: block;
+  margin: 10px auto;
+}
+
+.tile {
+  font-size: 2em;
+  font-weight: bold;
+  flex: 1 0 32%;
+  height: 93.75px;
+  line-height: 93.75px;
+  text-align: center;
+  margin: 1px;
+  background-color: #89b;
+}
+.tile:hover {
+  cursor: pointer;
+  background-color: #78a;
+}
+
+#play-area {
+  background: #000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 300px;
+  width: 300px;
+  border: 5px solid #000;
+  margin: 30px auto;
+}
+
+#reset-game {
+  display: none;
+  margin: 20px auto;
+  background: #cb2c4c;
+}
+#reset-game:hover {
+  cursor: pointer;
+  background: #a90a2a;
+}
