@@ -1,0 +1,147 @@
+$game-size: 500;
+$center-size: $game-size/2.5;
+$inner-margin: 20;
+$base-colour: #222;
+
+button:focus {
+  outline: none;
+}
+
+body {
+  background: #abc;
+}
+
+p {
+  text-align: center;
+}
+
+.row {
+  margin-top: -10px;
+}
+
+.game-title {
+  padding-top: 14px;
+  font-family: 'Bree Serif', serif;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.play-area {
+  position: relative;
+  margin: 50px auto;
+  height: $game-size+px;
+  width: $game-size+px;
+  border-radius: 50%;
+  background: $base-colour;
+  border: 1px solid black;
+  box-shadow: 0 14px 0 black, 0 20px 20px grey;
+  text-align: center;
+}
+
+.center-circle {
+  position: absolute;
+  top: ($game-size/2)-($center-size/2)+px;
+  left: ($game-size/2)-($center-size/2)+px;
+  height: $center-size+px;
+  width: $center-size+px;
+  border-radius: 50%;
+  background: $base-colour;
+}
+
+.center-panel {
+  position: relative;
+  background: white;
+  height: ($center-size)-(2*$inner-margin)+px;
+  width: ($center-size)-(2*$inner-margin)+px;
+  top: $inner-margin+px;
+  left: $inner-margin+px;
+  border-radius: 50%;
+}
+
+.game-btn {
+  position: absolute;
+  height: ($game-size/2)-($inner-margin)-($inner-margin/2)+px;
+  width: ($game-size/2)-($inner-margin)-($inner-margin/2)+px;
+  &.top-left {
+    top: $inner-margin+px;
+    left: $inner-margin+px;
+    background-color: #2659a9;
+    border-radius: 100% 0 0 0;
+  }
+  &.top-right {
+    top: $inner-margin+px;
+    right: $inner-margin+px;
+    background-color: #d62626;
+    border-radius: 0 100% 0 0;
+  }
+  &.bottom-right {
+    bottom: $inner-margin+px;
+    right: $inner-margin+px;
+    background-color: #eec026;
+    border-radius: 0 0 100% 0;
+  }
+  &.bottom-left {
+    bottom: $inner-margin+px;
+    left: $inner-margin+px;
+    background-color: #26b644;
+    border-radius: 0 0 0 100%;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.label {
+  position: absolute;
+  padding: 4px;
+  color: black;
+}
+
+#score-screen {
+  position: relative;
+  margin-left: 7%;
+  margin-top: 3%;
+  font-family: 'VT323', mono;
+	font-size: 36px;
+	line-height: 44px;
+	text-align: center;
+	background: #000;
+	border: 2px inset rgba(0,0,0,0.2);
+	border-radius: .1em;
+	box-shadow: 0 0 1.5em .1em rgba(0,0,0,0.25) inset;
+	width: 1.2em;
+	height: 1em;
+}
+
+.btn-small {
+  margin: 14px;
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  border: 2px solid #343838;
+  box-shadow: 0 1px rgba(0, 0, 0, 0.4);
+  background: black;
+}
+
+.strict-led {
+  vertical-align: top;
+  margin-top: 5px;
+  padding: 4px;
+  width: 4px;
+  height: 4px;
+  background-color: #460000;
+  border-radius: 100%;
+  border: 1px solid #343838;
+}
+
+#btn-reset {
+  background-color: #eec026;
+}
+
+#btn-start {
+  background-color: #26b644;
+}
+
+#btn-strict {
+  background-color: #d62626;
+}

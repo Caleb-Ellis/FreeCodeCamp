@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Simon-Game</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <head>
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|VT323" rel="stylesheet">
+</head>
+
+<div class="play-area">
+  
+  <div id="btn0" class="game-btn top-left"></div>
+  <div id="btn1" class="game-btn top-right"></div>
+  <div id="btn2" class="game-btn bottom-right"></div>
+  <div id="btn3" class="game-btn bottom-left"></div>
+  
+  <div class="center-circle">
+    <div class="center-panel">
+      <p class="game-title">simon</p>
+      <div class="row">
+        <label class="label" for="btn-start">START</label>
+        <button class="btn-small" id="btn-start"></button>
+        <label id="strict-label" class="label" for="btn-strict">STRICT</label>
+        <button class="btn-small" id="btn-strict"></button>
+        <label class="label" for="btn-reset">RESET</label>
+        <button class="btn-small" id="btn-reset"></button>
+      </div>
+      <div class="row">
+        <input id="score-screen" placeholder="--" disabled>
+        <button class="strict-led" disabled></button>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
